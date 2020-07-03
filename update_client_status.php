@@ -22,8 +22,8 @@ $disable->execute();
 
 //Connect to router
 $ip ='192.168.20.250';
-$username ='customer_care';
-$password ='f0ns3cr3t';
+$username ='admin';
+$password ='****';
 
 $client = new RouterOS\Client($ip,$username,$password);
 //$request = new RouterOS\Request('/ip/address/print');
