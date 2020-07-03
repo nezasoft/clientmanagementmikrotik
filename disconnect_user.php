@@ -17,8 +17,8 @@ include_once('connect/connect.php');
 
 
 $ip ='192.168.20.250';
-$username ='customer_care';
-$password ='f0ns3cr3t';
+$username ='admin';
+$password ='xxxxxx';
 
 $client = new RouterOS\Client($ip,$username,$password);
 $request = new RouterOS\Request('/ppp/secret/print');
