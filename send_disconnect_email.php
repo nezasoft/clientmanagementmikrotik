@@ -44,17 +44,17 @@ include_once('connect/connect.php');
     //Ask for HTML-friendly debug output
     $mail->Debugoutput = "html";
     //Set the hostname of the mail server
-    $mail->Host = "barua2.fon.co.ke";
-    $mail->setFrom('accountsreceivable@fon.co.ke', 'FON Accounts');
+    $mail->Host = "xxxxx";
+    $mail->setFrom('xxxxxx', 'FON Accounts');
     //Set an alternative reply-to address
-    $mail->addReplyTo('accountsreceivable@fon.co.ke', 'FON Accounts');
+    $mail->addReplyTo('xxxxx, 'FON Accounts');
     $mail->Subject = 'Account Disconnection Notice';
     $mail->isHTML(true);
     $mail->SMTPSecure = "ssl";
     $mail->Port = 465;          // Set the SMTP port
     $mail->SMTPAuth = true;     // Enable SMTP authentication
-    $mail->Username = "accountsreceivable@fon.co.ke";  // SMTP username
-    $mail->Password = "madeni 2019"; // SMTP password
+    $mail->Username = "xxxxx";  // SMTP username
+    $mail->Password = "xxxxx"; // SMTP password
 	
 	$get_clients = $conn->prepare("SELECT client_name, email,bill_ref_no FROM clients ORDER BY commence_date DESC LIMIT 3");
 	$get_clients->execute();
