@@ -7,8 +7,8 @@ require_once 'PEAR2_Net_RouterOS-1.0.0b6/src/PEAR2/Autoload.php';
 header('Content-Type: text/plain');
 
 $ip ='192.168.20.250';
-$username = 'customer_care';
-$password = 'f0ns3cr3t';
+$username = 'admin';
+$password = '****';
 
 try {
     $util = new RouterOS\Util($client = new RouterOS\Client($ip,$username,$password));
